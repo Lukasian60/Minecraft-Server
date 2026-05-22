@@ -1,6 +1,6 @@
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     height: 30px ;
     min-height: 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -36,8 +36,8 @@ h6{
 
 .gobutton {
     background-color: hsl(208, 100%, 85%);
-    height: 50px;
-    width: 200px;
+    height: 60px;
+    width: 250px;
     border-style:solid ;
     border-radius: 4px;
     border-width: 6px;
