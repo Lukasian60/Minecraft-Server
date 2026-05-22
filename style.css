@@ -4,10 +4,24 @@ h1 {
     height: 30px ;
     min-height: 20px;
     font-family:Arial, Helvetica, sans-serif;
+    color: #c3f3ff;
     }
 h2 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #c3f3ff ;
     }
+
+h4{
+    color: #c3f3ff ;
+}
+
+h5{
+    color: #c3f3ff ;
+}
+
+h6{
+    color: #c3f3ff ;
+}
 
 
 .wlinks {color: #0060B6;text-decoration: none;}
@@ -19,17 +33,25 @@ h2 {
 
 .gobutton {
     background-color: hsl(208, 100%, 85%);
-    height: 50px; width: 100px;
+    height: 50px;
+    width: 200px;
+    border-style:solid ;
     border-radius: 4px;
+    border-width: 6px;
     margin-bottom: 20px;
+    border-color: #0060B6;
 
 }
 
 .backbutton {
-background-color: rgb(198, 255, 236);
-color:white;
-border-style:ridge;border-color: #0060B6;border-radius: 4px ;
-height: 50px;width: 200px; cursor: pointer;
+background-color:  hsl(208, 100%, 85%);
+border-style:solid;
+border-color: #0060B6;
+border-radius: 4px ;
+border-width: 6px;
+height: 50px;
+width: 200px;
+cursor: pointer;
 a {color: #0060B6;text-decoration: none;}
 }
 
@@ -37,4 +59,11 @@ a:hover {
 color:#00A0C6; 
 text-decoration:none; 
 cursor:pointer;  
+}
+
+hr {
+    border-width: 10px;
+    background-color: black;
+    border-color: black;
+
 }
