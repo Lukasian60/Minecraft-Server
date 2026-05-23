@@ -11,6 +11,11 @@ h2 {
     color: #c3f3ff ;
     }
 
+h3{
+    color: #c3f3ff ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h4{
     color: #c3f3ff ;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +31,11 @@ h6{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.buttonfont {
+    color: #0060B6;
+    font-size: 20px;
+    
+}
 
 .wlinks {color: #0060B6;text-decoration: none;}
 .wlinks:hover {
@@ -48,12 +58,12 @@ h6{
 
 .backbutton {
 background-color:  hsl(208, 100%, 85%);
+height: 60px;
+width: 250px;
 border-style:solid;
 border-color: #0060B6;
 border-radius: 4px ;
 border-width: 6px;
-height: 50px;
-width: 200px;
 cursor: pointer;
 a {color: #0060B6;text-decoration: none;}
 }
