@@ -18,6 +18,7 @@ body{
     margin-right: 15px;
     font-family: Arial;
     color:#70a9d5;
+    padding-bottom: 45px;
 
 }
 
@@ -75,4 +76,16 @@ hr {
 
 }
 
-
+footer {
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  width: 100%;
+  background-color: rgb(28, 33, 36);
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 10px;
+}
