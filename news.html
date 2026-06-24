@@ -20,76 +20,15 @@
         </nav>
 
         <main>
-    
-            <div class="tbl-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th class="rank">#</th>
-        <th>Name</th>
-        <th>Tag</th>
-        <th style="text-align:right">Spielzeit</th>
-        <th class="bar-cell"></th>
-      </tr>
-    </thead>
-    <tbody id="playtime-tbody"></tbody>
-  </table>
-</div>
 
-<script>
-  const data = [
-    { name: "Fabi",     tag: "FaBiUs555",         mins: 18*60+12 },
-    { name: "Yosef",    tag: "R3ealm",             mins: 16*60+31 },
-    { name: "Fränzl",   tag: "Maxi2503",           mins: 14*60+52 },
-    { name: "Tobi",     tag: "ToibiusGHG",         mins: 13*60+49 },
-    { name: "Luis",     tag: "Luistod",            mins: 13*60+20 },
-    { name: "Tim",      tag: "Tim184GHG",          mins: 13*60+16 },
-    { name: "Dorian",   tag: "cxkdorian9",         mins: 11*60+45 },
-    { name: "Isak",     tag: "Dab3di",             mins: 11*60+5  },
-    { name: "Isabella", tag: "ISABELLAIA",         mins:  9*60+55 },
-    { name: "Lukas",    tag: "Lukasian06",         mins:  9*60+5  },
-    { name: "Simon",    tag: "Seikower",           mins:  8*60+46 },
-    { name: "Alex",     tag: "TiredArrow65776",    mins:  8*60+35 },
-    { name: "Elias",    tag: "Eleasyy",            mins:  6*60+17 },
-    { name: "Hussam",   tag: "MonkeyDsami",        mins:  5*60+23 },
-    { name: "Lilly",    tag: "Legoten",            mins:  2*60+31 },
-    { name: "Vivi",     tag: "Viv_2409",           mins: 17       },
-    { name: "David",    tag: "Streifenh0rnchen",   mins: 0        },
-    { name: "Nati",     tag: "itan5968",           mins: 0        },
-    { name: "Jan",      tag: "ASV13Jan",           mins: 0        },
-    { name: "Helene",   tag: "helene138797",       mins: 0        },
-  ];
+          <hr>
 
-  const max = data[0].mins;
 
-  const rankClass = i => i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+          <img src="seedfinal.jpg" alt="Seed vom Server" style="width: 250px; height: 300;"> 
+          <h4>- Ein Foto vom Seed</h4>
 
-  const fmtTime = m => {
-    if (m === 0) return '—';
-    if (m < 60) return m + 'min';
-    return Math.floor(m / 60) + 'h ' + (m % 60) + 'min';
-  };
-
-  const tbody = document.getElementById('playtime-tbody');
-  data.forEach((p, i) => {
-    const pct = max > 0 ? Math.round((p.mins / max) * 100) : 0;
-    const rc = rankClass(i);
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td class="rank ${rc}">${i + 1}</td>
-      <td class="name">${p.name}</td>
-      <td class="tag">${p.tag}</td>
-      <td class="time ${p.mins === 0 ? 'zero' : ''}">${fmtTime(p.mins)}</td>
-      <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
-    `;
-    tbody.appendChild(tr);
-  });
-</script>
-
-                <hr>
-                <img src="seedfinal.jpg" alt="Seed vom Server" style="width: 400px; height: 300;">  
-                <h4>- Ein Foto vom Seed</h4>
-            
+          <img src="serverstart.png" alt="Seed vom Server" style="width: 250px; height: 300;">
+          <h4>- Gruppenfoto serverstart</h4>
 
         </main>
     </body>
