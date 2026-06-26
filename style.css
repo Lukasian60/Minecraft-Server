@@ -43,6 +43,21 @@ h1 {
     margin-top: 0;
     }
 
+h2 {
+    font-size: 40px;
+    height: 30px ;
+    min-height: 20px;
+    margin-top: 0;
+    }
+h3 {
+    font-size: 25px;
+    height: 30px ;
+    min-height: 20px;
+    margin-top: 0;
+    }
+
+
+
 hr {
     height: 20px;
     background-color: rgb(47, 49, 65);
