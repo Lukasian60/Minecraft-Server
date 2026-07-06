@@ -4,13 +4,27 @@ html{
 
 }
 
+
+
 header {
     
     height: 5em;
     margin-bottom: 5px;
     padding-left: 10px;
     background: linear-gradient(to right,rgb(71, 60, 83),rgb(47, 49, 65)) ;
+    display: flex;
+    align-items: center;
 }
+
+.headerimg {
+    border-radius: 15px;
+    margin-left: auto;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+}
+
+
 
 body{
     background-color:rgb(28, 33, 36);
