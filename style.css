@@ -189,30 +189,110 @@ footer {
 }
 
 
+
+
+
+
+
+
+
 .tbl-wrap { padding: 1rem 0; font-family: sans-serif; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    thead th {
-      font-size: 15px;
-      font-weight: 500;
-      color: #70a9d5;
-      text-align: left;
-      padding: 8px 12px;
-      border-bottom: 1px solid #e0e0e0;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    tbody tr { border-bottom: 1px solid #e0e0e0; }
-    tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: rgb(42, 47, 49); }
-    td { padding: 9px 12px; color: #70a9d5; }
-    .rank { font-weight: 500; color: #70a9d5; width: 36px; }
-    .name { font-weight: 500; }
-    .tag { font-size: 12px; color: #70a9d5; }
-    .time { font-weight: 500; text-align: right; }
-    .bar-cell { width: 140px; }
-    .bar-bg { background: #f0f0f0; border-radius: 4px; height: 6px; overflow: hidden; }
-    .bar-fill { height: 6px; border-radius: 4px; background: #c468ec; }
-    .gold   { color: #ffd024; }
-    .silver { color: #C4C4C4; }
-    .bronze { color: #CD7F32; }
-    .zero   { color: #aaa; }
+.tbl-wrap table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tbl-wrap thead th {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tbl-wrap tbody tr { border-bottom: 1px solid #e0e0e0; }
+.tbl-wrap tbody tr:last-child { border-bottom: none; }
+.tbl-wrap tbody tr:hover { background: rgb(42, 47, 49); }
+.tbl-wrap .time,
+.tbl-wrap .deaths { font-weight: 500; text-align: right; }
+.tbl-wrap .bar-cell { width: 140px; }
+.tbl-wrap .bar-bg { background: #f0f0f0; border-radius: 4px; height: 6px; overflow: hidden; }
+.tbl-wrap .bar-fill { height: 6px; border-radius: 4px; }
+.tbl-wrap .gold   { color: #ffd024; font-weight: bold; }
+.tbl-wrap .silver { color: #C4C4C4; font-weight: bold; }
+.tbl-wrap .bronze { color: #CD7F32; font-weight: bold; }
+.tbl-wrap .zero   { color: #aaa; }
+
+/* per-table accent colors, scoped so they don't collide */
+.tbl-wrap.playtime-wrap .bar-fill { background: #e774c9; }
+.tbl-wrap.deaths-wrap   .bar-fill { background: #e05555; }
+
+.tbl-wrap .flawless {
+  color: #f87171;
+  font-weight: bold;
+}
+.tbl-wrap .flawless-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.03em;
+}
+.tbl-wrap.deaths-wrap tbody tr.flawless-row {
+  background: rgba(248, 113, 113, 0.096);
+}
+.tbl-wrap .bar-fill.flawless-fill {
+  background: #f87171;
+}
+
+.playtimetxt{
+  font-size: 15px;
+  color: #ff9fdd;
+}
+.playtimetitle{
+  font-size: 55px;
+  font-weight: bold;
+  font-family: Sacramento City College;
+  color: #ff9fdd;
+}
+
+/* Playtime palette: bold pink for names, softer muted pink for tags/cells */
+.tbl-wrap.playtime-wrap td    { padding: 9px 12px; color: #f9b8e2; }
+.tbl-wrap.playtime-wrap .name { color: #ff8fd8; font-weight: 500; }
+.tbl-wrap.playtime-wrap .rank { color: #ff8fd8; }
+.tbl-wrap.playtime-wrap .tag  { color: #d98cbd; }
+.tbl-wrap.playtime-wrap .time { color: #ffb3e6; }
+
+/* Deaths palette: bold red for names, softer muted red for tags/cells */
+.tbl-wrap.deaths-wrap td    { padding: 9px 12px; color: #f0a3a3; }
+.tbl-wrap.deaths-wrap .name { color: #f16565; font-weight: 500; }
+.tbl-wrap.deaths-wrap .rank { color: #f16565; }
+.tbl-wrap.deaths-wrap .tag  { color: #c98080; }
+.tbl-wrap.deaths-wrap .deaths { color: #f89b9b; }
+
+.tbl-wrap .rank { font-weight: 500; width: 36px; }
+.tbl-wrap .name { font-weight: 500; }
+
+/* scoped header colors + title font */
+.tbl-wrap.playtime-wrap thead th {
+  color: #ff9fdd;
+  font-family: Sacramento City College;
+}
+.tbl-wrap.deaths-wrap thead th {
+  color: #f87171;
+  font-family: Sacramento City College;
+}
+
+.deathstxt{
+  font-size: 15px;
+  color: #f87171;
+}
+.deathstitle{
+  font-size: 55px;
+  font-weight: bold;
+  font-family: Sacramento City College;
+  color: #f87171;
+}
